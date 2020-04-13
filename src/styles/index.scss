@@ -1,0 +1,495 @@
+@font-face {
+  font-family: 'SFProTextMedium';
+  src: url('./../assets/fonts/SFProText-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SFProTextBold';
+  src: url('./../assets/fonts/SFProText-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SFProTextLight';
+  src: url('./../assets/fonts/SFProText-Light.ttf');
+}
+
+@font-face {
+  font-family: 'SFProDisplayRegular';
+  src: url('./../assets/fonts/SFProDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SFProDisplaySemiBold';
+  src: url('./../assets/fonts/SFProDisplay-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'SFProDisplayBold';
+  src: url('./../assets/fonts/SFProDisplay-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SFProDisplayMedium';
+  src: url('./../assets/fonts/SFProDisplay-Medium.ttf');
+}
+
+html,body {
+  position: relative;
+}
+
+.navbar-default{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.navbar-nav {
+  a {
+    font-family: SFProTextMedium, serif;
+    font-size: 16px !important;
+  }
+}
+
+.navbar {
+  min-height: 100px;
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-toggle{
+    display: block !important;
+  }
+  .navbar-header{
+    float: none;
+  }
+}
+
+.navbar-brand {
+  height: 100px;
+  padding: 8px 15px;
+  & img {
+    height: 80px;
+    padding: 0
+  }
+}
+.navbar-toggle{
+  margin-top: 35px
+}
+
+navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding: 26.5px 20px;
+    line-height: 47px;
+  }
+}
+
+.language-label {
+  padding: 8px
+}
+
+.dropdown-menu {
+  & li a {
+    padding: 10px
+  }
+
+  padding: 0 !important;
+}
+
+footer{
+  /* Just like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+/*--------------------
+	Footer styles
+--------------------*/
+
+footer{
+  background-color: #000000;
+  display: flex;
+  justify-content: center; /* For horizontal alignment */
+  align-items: center; /* For vertical alignment */
+  padding: 46px;
+  & p.footer-title {
+    font-family: SFProDisplayRegular, serif;
+    font-size: 18px;
+    color: #9b9b9b;
+    margin: 0;
+    -moz-text-align-last: center; /* For Firefox prior 58.0 */
+    text-align-last: center;
+    text-align: center;
+  }
+}
+#project {
+  padding: 100px 0 30px 0;
+  text-align: justify;
+  & .project-title {
+    font-family: SFProDisplayBold, serif;
+    text-align: center;
+    font-size: 39px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: -0.42px;
+    color: #4a4a4a;
+    padding: 30px 0;
+    @media (min-width: 1140px) {
+      padding: 50px 0;
+    }
+  }
+  & .project-description {
+    padding-bottom: 50px;
+    & h3 {
+      font-family: SFProDisplayBold, serif;
+      font-size: 20px;
+      line-height: 1.1;
+      color: #4a4a4a;
+    }
+    & span {
+      font-weight: 700;
+    }
+    & p {
+      font-family: SFProDisplayRegular, serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #4a4a4a;
+    }
+    & span {
+      font-weight: 700;
+    }
+    @media (min-width: 1140px) {
+      background: url("/assets/images/bg_duan.jpg");
+      background-position: center;
+      background-repeat: repeat-x;
+      background-size: cover;
+      & .container{
+        padding-right: 450px;
+      }
+    }
+    @media (min-width: 1700px){
+      background-size: contain;
+      & .container{
+        padding-right: 450px;
+      }
+    }
+  }
+}
+
+#technique {
+  padding: 50px 0;
+  background: url("/assets/images/bg_technical.jpg");
+  background-size: cover;
+  & .technique-title {
+    font-family: SFProDisplayBold, serif;
+    font-size: 39px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: -0.42px;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  & .technique-body {
+    & p {
+      font-family: SFProDisplayRegular, serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #4a4a4a;
+    }
+    & h3 {
+      font-family: SFProDisplayBold, serif;
+      line-height: 1.1;
+      font-size: 20px;
+      color: #4a4a4a;
+    }
+    & .technique-left {
+      line-height: 25px;
+      & ol {
+        margin: 0;
+        padding-left: 16px;
+      }
+      & ul {
+        list-style-type:disc;
+        margin: 0;
+        padding-left: 32px;
+      }
+    }
+    & .technique-right {
+      @media (min-width: 999px) {
+        padding-left: 86px;
+      }
+      @media (max-width: 998px) {
+        padding-top: 30px;
+      }
+    }
+  }
+
+
+}
+
+#team{
+  color: #4a4a4a;
+  & .developer {
+    padding: 50px 0
+  }
+
+  & .team-title{
+    font-size: 39px;
+    line-height: 45px;
+    font-family: SFProDisplayBold, serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  & .team-description{
+    & p {
+      max-width: 756px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: SFProDisplayRegular, serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  & .list {
+    text-align: center;
+    margin-top: 20px;
+    & .avatar{
+      display: flex;
+      justify-content: center;
+      & img {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        margin-bottom: 18px;
+      }
+    }
+    @media (max-width: 780px) {
+      & .avatar{
+        margin-top: 20px;
+      }
+    }
+
+    & .display-name{
+      font-family: SFProTextBold, serif;
+      font-size: 18px;
+    }
+
+    & .position-name{
+      font-family: SFProTextLight, serif;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+#documents {
+  background: url("/assets/images/bg_document.jpg");
+  background-size: cover;
+  padding: 50px 0;
+  & .documents-title{
+    font-size: 39px;
+    line-height: 45px;
+    font-family: SFProDisplayBold, serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  & .custom-btn-download{
+    background-color: #0a5888;
+    & span {
+      font-family: SFProDisplayRegular, serif;
+      font-size: 16px;
+      & i {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+#contact {
+  padding: 50px 0;
+  background: url("/assets/images/bg_contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  & .contact-title{
+    font-size: 39px;
+    line-height: 45px;
+    font-family: SFProDisplayBold, serif;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  & .btn-primary-custom{
+    font-family: SFProDisplayMedium, serif;
+    background-color: #03adef;
+    border-radius: 6px;
+    padding: 16.5px 64.5px;
+    font-size: 18px;
+  }
+
+  & .padding-input{
+    padding: 0 60px;
+  }
+  & .padding-textarea{
+    padding: 0 38px;
+  }
+
+}
+input.form-control {
+  height: 48px;
+}
+textarea.form-control{
+  height: 145px !important;
+}
+
+.p0{
+  padding: 0 !important;
+}
+.pt20{
+  padding-top: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  color: #555;
+  background-color: #e7e7e7;
+  @media (min-width: 768px) {
+    border-bottom: 3px solid #00C58D;
+    color: unset;
+    background-color: unset;
+  }
+}
+.language img{
+  width: 52px;
+  height: auto;
+}
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: #00C58D;
+}
+
+.animated-icon2 span {
+  background: #e3f2fd;
+}
+
+.animated-icon3 span {
+  background: #f3e5f5;
+}
+
+.animated-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.slick-slide, .slick-slide *{ outline: none !important; }
+
+.el-table .cell {
+  word-break: unset !important;
+}
+.cell {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: SFProDisplayRegular, serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.el-table__header{
+  & .cell{
+    font-family: SFProDisplaySemibold, serif;
+  }
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background-color: #f7f9fb !important;
+}
+.el-table th, .el-table__footer-wrapper thead div, .el-table__header-wrapper thead div, .el-table__fixed-header-wrapper thead div {
+  background-color: #e2e7eb !important;
+}

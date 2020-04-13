@@ -1,0 +1,44 @@
+{
+  "name": "vng-iot-ventilator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
+    "firebase": "^7.14.0",
+    "i18next": "^19.4.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "jquery": "^3.5.0",
+    "lodash": "latest",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-google-recaptcha": "^2.0.1",
+    "react-google-sheets": "^0.4.0",
+    "react-hot-loader": "^4.12.20",
+    "react-i18next": "^11.3.4",
+    "react-scripts": "3.4.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "deploy:prod": "./scripts/deploy.sh",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "http-proxy-middleware": "latest"
+  }
+}
